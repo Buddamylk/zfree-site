@@ -221,6 +221,43 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                  <Heart className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-xl font-bold">Zaccai Free</span>
+              </div>
+              <p className="text-gray-400">Heart-centered leadership development and strategic consulting.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>Community Building</li>
+                <li>Stress Reduction</li>
+                <li>Strategic Planning</li>
+                <li>Change Management</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <div className="space-y-2 text-gray-400">
+                <p>info@zaccaifree.com</p>
+                <p>WhatsApp: +1 (202) 787-0664</p>
+                <p>Available Worldwide</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Zaccai Free. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
