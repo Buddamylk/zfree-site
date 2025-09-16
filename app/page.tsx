@@ -42,6 +42,14 @@ export default function Home() {
                 >
                   <Link href="/about">Learn More About My Approach</Link>
                 </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-orange-200 text-orange-700 hover:bg-orange-50 bg-transparent"
+                  asChild
+                >
+                  <Link href="/faq">View FAQ</Link>
+                </Button>
               </div>
             </div>
 

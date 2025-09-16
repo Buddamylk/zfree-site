@@ -11,7 +11,44 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.zaccaifree.com"),
   title: "Zaccai Free (ZaccaiFree) — Community Strategy & Consulting",
   description: "Consultant helping cities, nonprofits, and housing communities move from vision to outcomes.",
-  alternates: { canonical: "/" },
+  keywords:
+    "community strategy, consulting, leadership development, emotional intelligence, stress relief, nonprofit consulting, city planning, housing communities",
+  authors: [{ name: "Zaccai Free" }],
+  creator: "Zaccai Free",
+  publisher: "Zaccai Free",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.zaccaifree.com",
+    title: "Zaccai Free — Community Strategy & Consulting",
+    description: "Consultant helping cities, nonprofits, and housing communities move from vision to outcomes.",
+    siteName: "Zaccai Free Consulting",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zaccai Free — Community Strategy & Consulting",
+    description: "Consultant helping cities, nonprofits, and housing communities move from vision to outcomes.",
+  },
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "Zaccai Free Blog" }],
+    },
+  },
+  verification: {
+    google: "google-site-verification-code-here", // Replace with actual verification code
+  },
   generator: "Next.js",
 }
 

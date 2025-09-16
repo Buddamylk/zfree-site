@@ -2,6 +2,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Heart, Brain, Zap, Users, Target, Lightbulb } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Zaccai Free — Heart-Centered Leadership Development",
+  description:
+    "Learn about Zaccai Free's approach to transformational leadership through emotional intelligence, stress relief, and authentic presence. Heart-centered consulting for lasting change.",
+  keywords:
+    "heart-centered leadership, emotional intelligence, stress relief, leadership development, authentic presence, transformational leadership, Zaccai Free",
+  openGraph: {
+    title: "About Zaccai Free — Heart-Centered Leadership Development",
+    description:
+      "Learn about Zaccai Free's approach to transformational leadership through emotional intelligence, stress relief, and authentic presence.",
+    url: "https://www.zaccaifree.com/about",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+}
 
 export default function AboutPage() {
   return (
