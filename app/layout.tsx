@@ -7,9 +7,10 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Zaccai Free - Community Builder & Strategic Consultant",
-  description:
-    "Professional consulting services in community building, stress reduction, strategic planning, and change management. Available worldwide.",
+  metadataBase: new URL("https://www.zaccaifree.com"),
+  title: "Zaccai Free — Community Strategy & Consulting",
+  description: "Consultant helping cities, nonprofits, and housing communities move from vision to outcomes.",
+  alternates: { canonical: "/" },
   generator: "Next.js",
 }
 
