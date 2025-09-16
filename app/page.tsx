@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-200">
@@ -51,20 +51,21 @@ export default function Home() {
                   <Link href="/faq">View FAQ</Link>
                 </Button>
               </div>
-            </div>
 
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-amber-100 flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <Heart className="h-16 w-16 text-orange-600 mx-auto" />
-                  <h3 className="text-2xl font-bold text-gray-900">Heart-Centered Leadership</h3>
-                  <p className="text-gray-600">Transforming communities through authentic connection</p>
+              {/* Moved heart-centered leadership graphic below buttons */}
+              <div className="relative mt-8">
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-amber-100 flex items-center justify-center max-w-md mx-auto">
+                  <div className="text-center space-y-4 p-8">
+                    <Heart className="h-16 w-16 text-orange-600 mx-auto" />
+                    <h3 className="text-2xl font-bold text-gray-900">Heart-Centered Leadership</h3>
+                    <p className="text-gray-600">Transforming communities through authentic connection</p>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-4 shadow-lg">
-                <div className="flex items-center space-x-2">
-                  <Heart className="h-5 w-5 text-red-500" />
-                  <span className="text-sm font-medium">Heart-Centered Leadership</span>
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-4 shadow-lg">
+                  <div className="flex items-center space-x-2">
+                    <Heart className="h-5 w-5 text-red-500" />
+                    <span className="text-sm font-medium">Heart-Centered Leadership</span>
+                  </div>
                 </div>
               </div>
             </div>
