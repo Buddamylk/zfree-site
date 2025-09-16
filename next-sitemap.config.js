@@ -1,17 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://zaccaifree.com",
-  generateRobotsTxt: true,
-  sitemapSize: 7000,
-  changefreq: "daily",
-  priority: 0.7,
-  exclude: ["/api/*"],
-  robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-  },
+  siteUrl: "https://www.zaccaifree.com", // ← use www here
+  generateRobotsTxt: true, // creates /robots.txt
+  sitemapSize: 45000,
 }
